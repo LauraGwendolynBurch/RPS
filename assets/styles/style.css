@@ -39,9 +39,48 @@ h2 {
 }
 
 .section .info{
-    
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
+}
+
+.info span , .info h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px 10px;
+    font-family: sans-serif;
+    color: rgb(75, 204, 244);
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+}
+
+.show i{
+    font-size: 100px;
+    color: crimson;
+}
+
+.selection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+}
+
+.selection button{
+    margin: 0 20px;
+    padding: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 33px;
+    color: rgb(75, 204, 244);
+    background-color: crimson;
 }
