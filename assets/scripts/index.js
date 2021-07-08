@@ -51,6 +51,46 @@ function round() {
         text.style.color = "crimson";
         text2.textContent = text.textContent;
         text2.style.color = "crimson";
+      } else if (
+        showIcon.className === randomClasses[1] &&
+        computerShowIcon.className === randomClasses[2]
+      ) {
+        computerScore++;
+        cScore.textContent = computerScore;
+        text.textContent = "You lost! ";
+        text.style.color = "crimson";
+        text2.textContent = text.textContent;
+        text2.style.color = "crimson";
+      } else if (
+        showIcon.className === randomClasses[1] &&
+        computerShowIcon.className === randomClasses[0]
+      ) {
+        playerScore++;
+        pScore.textContent = playerScore;
+        text.textContent = "You win! ";
+        text.style.color = "crimson";
+        text2.textContent = text.textContent;
+        text2.style.color = "crimson";
+      } else if (
+        showIcon.className === randomClasses[2] &&
+        computerShowIcon.className === randomClasses[0]
+      ) {
+        computerScore++;
+        cScore.textContent = computerScore;
+        text.textContent = "You lost! ";
+        text.style.color = "crimson";
+        text2.textContent = text.textContent;
+        text2.style.color = "crimson";
+      } else if (
+        showIcon.className === randomClasses[2] &&
+        computerShowIcon.className === randomClasses[1]
+      ) {
+        playerScore++;
+        pScore.textContent = playerScore;
+        text.textContent = "You win! ";
+        text.style.color = "crimson";
+        text2.textContent = text.textContent;
+        text2.style.color = "crimson";
       }
     });
   });
