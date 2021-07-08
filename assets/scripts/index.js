@@ -5,14 +5,14 @@ const randomClasses = [
   "fas fa-hand-scissors",
 ];
 const butttons = document.querySelectorAll(".selection button");
-const showIcon = document.querySelector(".show i");
+const showIcon = document.querySelector(".me i");
 const computerShowIcon = document.querySelector(".computer i");
 const pScore = document.getElementById("playerScore");
 const cScore = document.getElementById("computerScore");
 const text = document.getElementById("demo");
 const text2 = document.getElementById("demo2");
-let computerScore = 1;
-let playerScore = 1;
+let computerScore = 0;
+let playerScore = 0;
 
 function round() {
   butttons.forEach((btn) => {
@@ -25,11 +25,31 @@ function round() {
       computerShowIcon.className = randomClasses[randomNum];
 
       if (showIcon.className === computerShowIcon.className) {
-        pScore.innerHTML = pScore.innerHTML;
-        cScore.innerHTML = cScore.innerHTML;
-        text.innerHTML = "It's a Tie ! ";
+        pScore.textContent = pScore.textContent;
+        cScore.textContent = cScore.textContent;
+        text.textContent = "It's a Tie ! ";
         text.style.color = "crimson";
-        text2.innerHTML = text.innerHTML;
+        text2.textContent = text.textContent;
+        text2.style.color = "crimson";
+      } else if (
+        showIcon.className === randomClasses[0] &&
+        computerShowIcon.className === randomClasses[1]
+      ) {
+        computerScore++;
+        cScore.textContent = computerScore;
+        text.textContent = "You lost! ";
+        text.style.color = "crimson";
+        text2.textContent = text.textContent;
+        text2.style.color = "crimson";
+      } else if (
+        showIcon.className === randomClasses[0] &&
+        computerShowIcon.className === randomClasses[2]
+      ) {
+        playerScore++;
+        pScore.textContent = playerScore;
+        text.textContent = "You win! ";
+        text.style.color = "crimson";
+        text2.textContent = text.textContent;
         text2.style.color = "crimson";
       }
     });

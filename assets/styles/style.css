@@ -1,86 +1,86 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: blanchedalmond;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blanchedalmond;
 }
 
 .header {
-    color: crimson;
+  color: crimson;
 }
 
 h1 {
-    font-family: sans-serif;
-    font-weight: 800;
-    margin: 15px 0;
-    
+  font-family: sans-serif;
+  font-weight: 800;
+  margin: 15px 0;
 }
 
 h2 {
-    color: crimson;
-    padding: 5px;
-    font-family: sans-serif;
+  color: crimson;
+  padding: 5px;
+  font-family: sans-serif;
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
-.container .section{
-    width: 350px;
-    margin: 20px 50px;
+.container .section {
+  width: 350px;
+  margin: 20px 50px;
 }
 
-.section .info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
+.section .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
 }
 
-.info span , .info h3{
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0px 10px;
-    font-family: sans-serif;
-    color: rgb(75, 204, 244);
+.info span,
+.info h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0px 10px;
+  font-family: sans-serif;
+  color: rgb(75, 204, 244);
 }
 
-.show{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 220px;
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
 }
 
-.show i{
-    font-size: 100px;
-    color: crimson;
+.show i {
+  font-size: 100px;
+  color: crimson;
 }
 
-.selection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 350px;
-    height: 100px;
+.selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 100px;
 }
 
-.selection button{
-    margin: 0 20px;
-    padding: 25px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 33px;
-    color: rgb(75, 204, 244);
-    background-color: crimson;
+.selection button {
+  margin: 0 20px;
+  padding: 25px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 33px;
+  color: rgb(75, 204, 244);
+  background-color: crimson;
 }
