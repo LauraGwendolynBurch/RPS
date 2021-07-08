@@ -13,6 +13,7 @@ const text = document.getElementById("demo");
 const text2 = document.getElementById("demo2");
 let computerScore = 0;
 let playerScore = 0;
+const page = document.querySelector(".game");
 
 function round() {
   butttons.forEach((btn) => {
@@ -91,6 +92,11 @@ function round() {
         text.style.color = "crimson";
         text2.textContent = text.textContent;
         text2.style.color = "crimson";
+      }
+      if (playerScore === 3) {
+        page.innerHTML = "You won the game!";
+      } else if (computerScore === 3) {
+        page.innerHTML = "You lost to a robot!";
       }
     });
   });
